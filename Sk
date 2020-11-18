@@ -1,0 +1,39 @@
+const baseBet = 100
+const target = 1.33
+const betMultiplier = 3
+
+let bet = baseBet
+let streak = 0
+let test = true
+
+while(true){
+
+	while(test) {
+
+	const { multipier } = await this.Skip()
+	if(multipier < target){
+		streak++
+		if(streak == 7){
+			test = false
+		} 
+	}
+	else{
+		streak = 0
+	} 
+
+}
+
+while(!test) {
+
+	const { multipier} = await this.log(bet, target)
+	if (multiplier < target) {
+			bet = bet * betMultipier
+		} else {
+			streak = 0
+			test = true
+			bet = betBase
+		}
+
+	} 
+
+} 
